@@ -11,6 +11,8 @@ export interface IMovie {
   Type: string;
   Year: string;
   imdbID: string;
+  Director?: string;
+  Plot?: string;
 }
 
 function Home() {
@@ -30,7 +32,6 @@ function Home() {
 
   return (
     <div>
-      <h1>Home</h1>
       <MoviesList movies={movies} />
     </div>
   );
