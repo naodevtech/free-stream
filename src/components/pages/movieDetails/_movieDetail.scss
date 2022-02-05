@@ -1,0 +1,53 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/brands-colors.scss";
+
+.container_movie_detail {
+  @include media(laptop) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4em;
+  }
+  .box_infos {
+    background-color: rgb(218, 218, 218);
+    padding: 1em;
+    height: 100%;
+
+    h1 {
+      color: $primary;
+    }
+    h3 {
+      color: $primary-dark;
+    }
+    h5 {
+      color: black;
+      padding: 1em 0;
+    }
+    @include media(laptop) {
+      background-color: rgb(218, 218, 218);
+      padding: 0;
+      padding-right: 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 50%;
+      text-align: right;
+      h5 {
+        width: 90%;
+      }
+    }
+    @include media(minilaptop) {
+      background-color: rgb(218, 218, 218);
+      padding: 0;
+      padding-right: 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 50%;
+      text-align: right;
+      h5 {
+        width: 90%;
+      }
+    }
+  }
+}
