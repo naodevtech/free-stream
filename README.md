@@ -1,3 +1,10 @@
+# Démarrer le projet
+
+- Clonez le répertoire
+- Créer un fichier .env avec les différentes variables disponibles dans le fichier .env-example
+- Faire un "npm start" dans le terminal à la raçine
+- Enjoy !
+
 # Free test technique
 
 Le but est de développer une interface permettant de rechercher des films et d'en afficher les informations.
@@ -6,11 +13,11 @@ Le choix des éléments UI et du style de l'interface est libre. La librairie Ma
 
 ## Fonctionalitées
 
-- un champ permet de rechercher des films par titre
-- la liste des résultats contient pour chaque film les informations suivantes :
+- ✅ un champ permet de rechercher des films par titre
+- ✅ la liste des résultats contient pour chaque film les informations suivantes :
   - le titre ("Title")
   - l'année ("Year)
-- au clic sur un film on affiche les détails suivant (dans une pop-in ou une nouvelle page) :
+- ✅ au clic sur un film on affiche les détails suivant (dans une pop-in ou une nouvelle page) :
   - le réalisateur ("Director")
   - l'intrigue ("Plot")
   - l'affiche ("Poster")
