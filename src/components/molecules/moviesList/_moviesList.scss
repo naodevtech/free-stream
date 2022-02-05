@@ -1,0 +1,30 @@
+@import "../../../sass/brands-colors.scss";
+@import "../../../sass/mixins.scss";
+
+.container_movies {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    height: 50px;
+    width: 80%;
+    padding: 1em;
+    font-size: 1em;
+    color: rgb(77, 77, 77);
+    font-weight: 900;
+    @include media(tablet) {
+      width: 50%;
+    }
+    @include media(laptop) {
+      width: 30%;
+    }
+  }
+  .box_movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+}

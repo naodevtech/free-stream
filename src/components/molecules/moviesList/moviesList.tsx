@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Movie from "../../atoms/movie/movie";
 import { IMovie } from "../../pages/home/home";
 
+import "./_moviesList.scss";
 export interface IMoviesList {
   movies: IMovie[];
 }
@@ -18,7 +19,7 @@ const MoviesList = ({ movies }: IMoviesList) => {
     <div className="container_movies">
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Recherchez un film par son titre..."
         value={searchTerm}
         onChange={handleChange}
       />

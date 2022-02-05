@@ -21,7 +21,9 @@ function Home() {
   useEffect(() => {
     const getAllMovies = async () => {
       try {
-        const moviesFetched = await api.get("/?s=inception&apikey=c3e4f26d");
+        const moviesFetched = await api.get(
+          `/?s=inception&apikey=${process.env.REACT_APP_API_KEY}`
+        );
         setMovies(moviesFetched.data.Search);
       } catch (error) {
         return error;
@@ -31,7 +33,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="container_home">
       <MoviesList movies={movies} />
     </div>
   );

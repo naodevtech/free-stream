@@ -1,0 +1,15 @@
+@import "../brands-colors.scss";
+@import "../brands_fonts.scss";
+
+.btn {
+  height: 50px;
+  width: 300px;
+  background-color: $primary-dark;
+  border: none;
+  color: white;
+  font-family: $brand-font-primary-medium;
+  cursor: pointer;
+  &--rounded {
+    border-radius: 4rem;
+  }
+}

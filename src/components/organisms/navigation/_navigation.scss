@@ -1,10 +1,16 @@
+@import "../../../sass/mixins.scss";
+
 nav {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  @include media(laptop) {
+    justify-content: start;
+    padding-top: 1.4em;
+  }
   .logo {
     height: 70px;
+    cursor: pointer;
   }
 }
